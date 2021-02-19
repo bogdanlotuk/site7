@@ -1,0 +1,561 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+    box-sizing: inherit;    
+}
+a {
+    text-decoration: none;
+    color: #353231;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #353231;
+}
+.container {
+    max-width: 1940px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+// ########HEADER##########
+.header {
+    .container {
+        background-image: url(/images/header/bg-img.png);
+        background-position-y: 78px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 0;
+    }
+    &__fix {
+        height: 78px;
+        position: fixed;
+        top: 0;
+        background-color: #fff;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__fix-logo {
+        margin-left: 50px;
+    }
+    &__fix-navigation {
+        margin-right: 50px;
+    }
+    &__fix-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+        padding: 0;
+    }
+    &__fix-item {
+        position: relative;
+        margin-left: 60px;
+    }
+    &__fix-item:last-child{
+        padding-right: 30px;
+    }
+    &__fix-item:last-child::after {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background: url(../images/header/triangle.png);
+        background-repeat: no-repeat;        
+    }
+    &__fix-item-link {
+        text-transform: uppercase;
+    }
+    &__inner {   
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+    }
+    &__top {
+        margin-top: 147px;
+        margin-bottom: 440px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__logo {
+        margin-left: 50px;
+    }
+    &__navigation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 20px;        
+    }
+    &__menu {        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+        width: 100%;
+        padding: 0;
+        margin-right: 0;
+    }
+    &__item  {
+        margin-left: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__item-link {
+        font-size: 16px;
+        line-height: 18px;
+        color:#000;
+        text-transform: uppercase;
+    }
+    &__h3 {
+        margin-bottom: 245px;
+        font-size: 32.28px;
+        line-height: 38px;
+        text-align: center;
+        letter-spacing: 14.2835px;
+        text-transform: uppercase;
+    }
+}
+
+
+// ############CAR-WITH-BAG#################
+.car-with-bag {
+    &__inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 77px;
+    }
+    &__left {
+        max-width: 623px;
+        max-height: 763px;
+        margin-top: 210px;
+        margin-bottom: 127px;        
+    }
+    &__right {
+        max-width: 623px;
+        max-height: 763px;
+        margin-top: 336px;
+        margin-bottom: 38px;
+    }
+    &__img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+// ############ATTRACTION#################
+.attraction {
+    .container {
+        background-image: url(/images/attraction/bg-img.png);
+        background-position: center;
+        background-size: cover;
+    }
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 930px;
+        margin: 0 auto;
+    }
+    &__h2 {
+        margin-top: 460px;
+        margin-bottom: 130px;
+        font-weight: bold;
+        font-size: 84px;
+        line-height: 83px;
+        text-align: center;
+    }
+    &__text {
+        margin-bottom: 522px;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 29px;  
+        text-align: center;
+    }
+}
+
+// ############AVENUE#################
+.avenue {
+    .container {
+        background-image: url(/images/avenue/bg-img.png);
+        background-position: center bottom;
+        background-size: content;
+        background-repeat: no-repeat;
+    }
+    &__inner {
+        max-width: 1515px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        margin: 0 auto;
+    }
+    &__top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 107px;
+        margin-bottom: 890px;
+        gap: 50px;
+    }
+    &__h3 {        
+        font-weight: bold;
+        font-size: 72px;
+        line-height: 75px;
+        width: 70%;
+    }
+    &__text {
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 29px;  
+        width: 30%;      
+    }
+}
+// ############FOOTER#################
+.footer {
+    .container {
+        background-image: url(/images/footer/bg-img.png);
+        background-position: center bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    &__inner {
+        margin: 0 auto;
+        max-width: 770px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__h3 {
+        margin-top: 485px;
+        margin-bottom: 80px;
+        font-weight: bold;
+        font-size: 90px;
+        line-height: 84px;
+        text-align: center;
+    }
+    &__london {
+        width: 100%;
+        margin-bottom: 85px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__city {
+        margin-bottom: 45px;
+        font-size: 20px;
+        line-height: 24px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    &__london-person {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    &__person {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__person-name {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;        
+    }
+    &__person-mail {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        color: #353231;
+        margin-bottom: 18px;
+    }
+    &__person-phone {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        color: #353231;
+    }
+    &__new-york {
+        margin-bottom: 110px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__all-rights {
+        margin-bottom: 82px;
+        opacity: 0.65;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1024px) {
+    .header {
+        &__top {        
+            margin-bottom: 340px;       
+        }
+        &__h3 {
+            margin-bottom: 200px;
+        }
+        &__menu {    
+            margin-right: 60px;
+        }
+    }
+    .avenue {
+        &__top {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+            margin-bottom: 400px;            
+        }
+        &__h3 {     
+            font-size: 72px;
+            line-height: 75px;
+            width: 80%;
+            text-align: center;
+        }
+        &__text {
+            font-size: 20px;
+            line-height: 29px;  
+            width: 80%;   
+            text-align: center;   
+        }
+    }
+    .footer{
+        &__h3 {
+            margin-top: 300px;
+            margin-bottom: 60px;            
+            font-size: 76px;
+            line-height: 84px;            
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .header {
+        &__fix-item {            
+            margin-left: 30px;
+        }
+        &__fix-item-link {
+            font-size: 14px;
+        }
+        &__item  {
+            margin-left: 40px;            
+        }
+        &__top {
+            margin-bottom: 150px;
+        }
+    }
+    .car-with-bag {
+        &__inner {            
+            gap: 40px;
+        }
+        &__left {           
+            margin-top: 160px;
+            margin-bottom: 89px;            
+        }
+        &__right {           
+            margin-top: 286px;
+            margin-bottom: 0px;
+        }        
+    }
+    .attraction {        
+        &__h2 {
+            margin-top: 300px;
+            margin-bottom: 130px;            
+            font-size: 56px;
+            line-height: 65px;            
+        }
+        &__text {
+            margin-bottom: 300px;
+            font-size: 18px;            
+        }
+    }
+    .avenue {
+        &__top {
+            margin-top: 10px;
+            margin-bottom: 300px;
+            gap: 0;            
+        }
+        &__h3 {            
+            font-size: 56px;
+            line-height: 65px;            
+        }
+        &__text {
+            font-size: 18px;
+            line-height: 26px;     
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        &__item  {
+            margin-left: 30px;
+        }
+        &__item-link {
+            font-size: 14px;            
+        }
+        &__fix-navigation {
+            margin-right: 10px;
+        } 
+        &__fix-item {
+            margin-left: 10px;
+        }
+        &__ix-item-link {
+            font-size: 12px
+        }
+    }
+    .car-with-bag {
+        &__inner {            
+            gap: 0;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        &__left {           
+            margin-top: 50px;
+            margin-bottom: 30px;            
+        }
+        &__right { 
+            margin-top: 0;
+        }        
+    }
+
+    .footer {
+        &__h3 {
+            margin-top: 200px;
+            margin-bottom: 50px;            
+            font-size: 56px;
+            line-height: 60px;            
+        }
+        &__london-person {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    .header {
+        &__logo {
+            display: none;
+        }
+        &__top {
+            justify-content: center;
+        }
+        &__navigation {
+            margin-right: 0;
+        }
+        &__fix {
+            justify-content: center;
+        }
+        &__fix-navigation {
+            display: none;
+        } 
+        &__fix-logo {
+            margin-left: 0;            
+        }
+        &__menu {
+            margin: 0 auto;
+        }
+        &__item:first-child {
+            margin-left: 0;
+        }
+    }
+    .attraction {        
+        &__h2 {
+            margin-top: 150px;
+            margin-bottom: 100px;            
+            font-size: 40px;
+            line-height: 46px;            
+        }
+        &__text {
+            margin-bottom: 100px;
+            font-size: 16px;            
+        }
+    }
+    .avenue {
+        &__top {
+            margin-bottom: 200px;              
+        }
+        &__h3 {            
+            font-size: 48px;
+            line-height: 56px;
+            width: 100%;
+        }
+        &__text {
+            font-size: 16px;
+            line-height: 24px; 
+            width: 100%;    
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        &__item {
+            margin-left: 15px;
+        }
+        &__top {
+            margin-bottom: 100px;
+        }
+        &__h3 {
+            margin-bottom: 105px;            
+        }
+    }
+    .attraction {        
+        &__h2 {
+            margin-top: 100px;
+            margin-bottom: 60px;            
+            font-size: 32px;
+            line-height: 36px;            
+        }
+        &__text {
+            margin-bottom: 50px;
+            font-size: 14px;            
+        }
+    }
+    .avenue {
+        &__top {
+            margin-bottom: 150px;              
+        }
+        &__h3 {            
+            font-size: 32px;
+            line-height: 36px;            
+        }
+        &__text {
+            font-size: 16px;
+            line-height: 22px;     
+        }
+    }
+    .footer {
+        &__h3 {
+            margin-top: 100px;
+            margin-bottom: 40px;            
+            font-size: 48px;
+            line-height: 50px;            
+        }  
+        &__all-rights {
+            margin-bottom: 40px;            
+        }
+        &__new-york {
+            margin-bottom: 60px;
+        }
+    }
+}
